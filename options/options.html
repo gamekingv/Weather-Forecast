@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>option</title>
+    <link rel="stylesheet" href="options.css" />
+</head>
+
+<body>
+    <form>
+        <div class="title">
+            <label>在扩展图标显示实时天气</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" id="realtime_weather" style="display:none" />
+            <label for="realtime_weather"></label>
+        </div>
+    </form>
+    <form>
+        <div class="title">
+            <label>在扩展图标显示实时温度</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" id="realtime_temp" style="display:none" />
+            <label for="realtime_temp"></label>
+        </div>
+    </form>
+    <form>
+        <div class="title">
+            <label>城市</label>
+        </div>
+        <div class="option">
+            <input type="text" id="city" placeholder="留空则自动获取" />
+            <input type="text" name="notautosubmit" style="display:none" />
+        </div>
+    </form>
+    <form>
+        <div class="title">
+            <label>自动更新间隔（分钟）</label>
+        </div>
+        <div class="option">
+            <input type="text" id="interval" placeholder="默认为20分钟" />
+            <input type="text" name="notautosubmit" style="display:none" />
+        </div>
+    </form>
+    <script src="options.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>popup</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <div id="weather-info"></div>
+    <div id="error-message" style="display: none;">
+        <svg id="error-icon" viewbox="0 0 1024 1024">
+            <use xlink:href="error.svg#shape" />
+        </svg>
+    </div>
+    <div id="feedback-message">
+        <p class="normal"></p>
+    </div>
+    <!-- <div id="weather-info-city">
+        <p class="normal"></p>
+    </div> -->
+    <svg id="refresh" viewbox="20 20 160 160" title="刷新">
+        <use xlink:href="refresh.svg#shape" />
+    </svg>
+    <svg id="setting" viewbox="0 0 200 200" title="设置">
+        <use xlink:href="setting.svg#shape" />
+    </svg>
+    <script src="popup.js"></script>
+</body>
+
+</html>

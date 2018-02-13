@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    -moz-user-select: none;
+    font: message-box;
+    overflow: hidden;
+}
+
+form {
+    display: flex;
+    border-top: 1px solid #c1c1c1;
+    color: #333;
+    margin: 0 -133px 0 0;
+    padding: 0;
+    min-height: 35px;
+}
+
+.title {
+    flex: 1;
+    cursor: default;
+    font-size: 1.25rem;
+    min-width: 15em;
+    max-width: 25em;
+}
+
+.title > label {
+    margin-top: 1px;
+    margin-bottom: 2px;
+    margin-inline-start: 6px;
+    margin-inline-end: 5px;
+    line-height: calc(35px - 3px);
+}
+
+.option
+ {
+    flex: 2;
+    display: flex;
+}
+
+.option > input[type="text"] {
+    margin: 5px 0;
+    -moz-appearance: none;
+    border: 1px solid #c1c1c1;
+    border-radius: 2px;
+    background-color: transparent;
+    padding-left: 5px;
+    min-width: 3em;
+    max-width: 14em;
+    width: 100% !important;
+}
+.option > input[type="text"]:hover,
+.option > input[type="text"]:focus {
+    border-color: #0095dd;
+}
+.option > input[type="text"]:focus {
+    background-color: white;
+}
+.option > label {
+    width: 23px;
+    height: 23px;
+    border-radius: 2px;
+    border: 1px solid #c1c1c1;
+    background-color: #f1f1f1;
+    background-image: linear-gradient(#fff, rgba(255,255,255,0.8));
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 1px 0 #fff, inset 0 2px 0 0 rgba(0,0,0,0.03);
+    margin: auto 0;
+}
+.option > label:hover {
+    border-color: #0095dd;
+}
+.option > input:checked + label {
+    background-image: url("chrome://global/skin/in-content/check.svg#check"), linear-gradient(#fff, rgba(255,255,255,0.8));
+}

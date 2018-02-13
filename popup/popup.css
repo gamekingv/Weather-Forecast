@@ -1,0 +1,126 @@
+html,
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    width: 538px;
+    -moz-user-select: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#error-message {
+    height: 250px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-icon {
+    width: 150px;
+    height: 150px;
+    fill: rgb(217, 83, 79);
+}
+
+#refresh,
+#setting,
+#weather-info-city,
+#feedback-message {
+    position: absolute;
+    top: 12px;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+
+#refresh,
+#setting {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+#refresh:hover,
+#setting:hover {
+    filter: drop-shadow(0 0 1px white);
+}
+
+#refresh.error:hover,
+#setting.error:hover {
+    filter: drop-shadow(0 0 1px rgb(17, 153, 251));
+}
+
+#refresh>use,
+#setting>use {
+    fill: white;
+}
+
+#refresh.error>use,
+#setting.error>use {
+    fill: rgb(17, 153, 251);
+}
+
+#refresh {
+    right: 33px;
+}
+
+#setting {
+    right: 13px;
+}
+
+#weather-info-city {
+    right: 53px;
+    text-align: right;
+    color: white;
+    pointer-events: none;
+}
+
+#feedback-message {
+    right: 93px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.updating {
+    color: #c1c1c1;
+}
+
+.fail {
+    color: rgb(217, 83, 79);
+}
+
+.success {
+    color: rgb(92, 184, 92);
+    animation: autohide 3.5s;
+}
+
+@keyframes autohide {
+    86% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*修正*/
+
+.op_weather4_twoicon {
+    box-sizing: content-box;
+    height: 268px !important;
+}
+
+.op_weather4_twoicon_shishi_info {
+    text-align: center;
+}
