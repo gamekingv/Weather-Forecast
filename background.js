@@ -4,7 +4,7 @@ let weatherInfo = {
     htmlCode: '',
     temp: 0,
     city: '',
-    searchLink: 'https://www.baidu.com/s?wd=' + encodeURIComponent('天气'),
+    searchLink: 'https://www.baidu.com/s?wd=' + encodeURIComponent('天气') + '&inputT=1245',
     icon: null,
     errorMessage: null,
     timer: null,

@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Weather Forecast",
-    "version": "0.6.8",
+    "version": "0.6.9",
     "description": "百度天气预报。",
     "icons": {
         "48": "icons/icon48x48.png"
